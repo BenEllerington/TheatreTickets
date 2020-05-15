@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="description" content="theatreTickets">
+    <title>Theatre Tickets</title>
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Theatre Tickets</h1>
+    <form>
+        <fieldset id = "AddressDetails">
+            
+            <legend>Address Details </legend>
+           
+            
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+            
+                <label for="Line1">1st Line of Address:</label>
+                <input type="text" id="Line1" name="Line1" required>
+            
+            
+                <label for="Line2">2nd Line of Address :</label>
+                <input type="text" id="Line2" name="Line2">
+            
+
+            
+                <label for="City">City :</label>
+                <input type="text" id="City" name="City">
+            
+            
+                <label for="County">County :</label>
+                <input type="text" id="County" name="County">
+            
+            
+                <label for="postcode">Postcode:</label>
+                <input type="text" id="postcode" name="postcode" required>
+            
+       
+        </fieldset>
+      </form>
+
+      <form>
+          <fieldset id = "showSelect">
+              <Legend>Available Shows</Legend>
+
+              <input type="radio" id="Lion" name="ticket" value="67" label="Lion King" >
+                 <label for="Lion">Lion King : £67</label>
+
+
+                 <input type="radio" id="Phantom" name="ticket" value="79" label="Phantom of the Opera">
+                 <label for="Phantom">Phantom of the Opera : £79</label>
+
+
+                 <input type="radio" id="Saigon" name="ticket" value="83" label="Miss Saigon" >
+                 <label for="Saigon">Miss Saigon : £83</label>
+
+                         
+                 <input type="radio" id="Hamilton" name="ticket" value="85" label="Hamilton" >
+                 <label for="Hamilton">Hamilton : £85</label>
+                     
+            
+                 <label for="numTickets"> Number of Tickets:</label>
+                 <input type="number" id="numTickets" name="numTickets" min="0" >
+
+                 <p id="ticketOutput"></p>
+
+                 
+          </fieldset>
+      </form>
+            
+      
+
+      <form>
+          <fieldset id = "deliveryMethod">
+                <legend>Delivery Method</legend>
+                 <input type="radio" id="eTicket" name="delivery" value="0" label="eTicket">
+                 <label for="eticket">E-ticket : Free</label>
+            
+                 <input type="radio" id="boxOffice" name="delivery" value="1.50" label = "Box Office">
+                 <label for="boxoffice">Box Office : £1.50</label>
+            
+                 <input type="radio" id="post" name="delivery" value="3.99" label = "Postal Delivery" >
+                 <label for="post">Post : £3.99</label>
+
+                 <p id="deliveryOutput"></p>
+          </fieldset>
+      </form>
+      <p id="ticketsOrderedOutput"></p>
+      <p id="deliveryMethodOutput"></p>
+      <p id="totalOutput"></p>
+      <p id="discountOutput"></p>
+      <p id="totalDiscountOutput"></p>
+      <p><button type = "button" id="bookTicket" name="bookTicket">Book Tickets</button></p>
+      <script src="script/main.js"></script>
+</body>
